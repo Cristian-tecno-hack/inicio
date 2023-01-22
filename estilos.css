@@ -1,0 +1,260 @@
+/*body{
+    font: 15px Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0, 255, 0);
+}*/
+
+/*estilos globales*/
+.contenedor{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.boton1{
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffff;
+}
+
+/*encabezado*/
+/*header{
+    background-color: #24282b;
+    color: #ffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 5px solid #1293d4;
+}
+*/
+header a{
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+neader #marca{
+    float: left;
+}
+
+header #marca h1{
+    margin: 0;
+}
+
+header nav{
+    float:right;
+    margin-top: 10px;
+}
+
+header .resaltado, header .actual a{
+    color: #1293d4;
+    font-weight: bold;
+}
+
+header a:hover{
+    color:#ccc;
+    font-weight: bold;
+}
+
+/*cabecera con imagen*/
+#cabecera{
+    min-height: 400px;
+    background: url('../img/img.png') no-repeat 0 -400px; /*-400*/
+    text-align: center;
+    color: #fff;
+}
+
+#cabecera h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px; /*10px*/
+}
+#cabecera p{
+    font-size: 20px;/*20px*/
+}
+
+/*formulario boletín*/
+#boletin{
+    padding: 15px;
+    color: #fff;
+    background: #24282b;
+}
+
+#boletin h1{
+    float: left;
+}
+
+#boletin form{
+    float: right;
+    margin-top: 15px;
+}
+
+#boletin input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/*cajas*/
+#cajas{
+    margin-top: 20px;
+}
+
+#cajas .caja{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#cajas .caja img{
+    width: 300px; /*tamaño de imagene 350s*/
+}
+
+/*lateral*/
+aside#lateral{
+    float:right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+.oscuro{
+    padding: 15px;
+    background-color: #35424a;
+    color:fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*main-col*/
+article#main-col{
+    float:left;
+    width: 65%;
+}
+
+/*servicios*/
+ul#servicios li{
+    list-style: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    background-color: #e6e6e6;
+    image-resolution: 50px;/*no se si esta bien*/
+}
+
+/*footer*/
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #1293d4;
+    text-align: center;
+}
+
+/*formulario de contacto*/
+input, textarea{
+    width:100%;
+    height: 35px;
+    border: 1px solod gray;
+    margin-bottom: 5px;
+}
+
+textarea{
+    height: 120px;
+}
+
+input[type="submit"]{
+    background-color: #e8491d;
+    color:#fff;
+}
+
+/*media Queries*/
+@media(max-width:768px){
+    header #marca,
+    header nav,
+    header nav li,
+    #boletin h1,
+    #boletin form,
+    #cajas .caja,
+    article#main-col,
+    aside#lateral
+    {
+        float:none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px; /*20px*/
+    }
+    #boletin h1{
+        margin-top: 40px; /*40px*/
+    }
+    #boletin button{
+        display:block;
+        width: 100%;
+    }
+
+
+    #boletin form input[type="email"]{
+        width:100%;
+        margin-bottom: 5px;
+    }
+    
+    input, textarea{
+        width:98%;
+    }
+}
+
+/*media Queries*/
+@media(max-width:500px){
+    header #marca,
+    header nav,
+    header nav li,
+    #boletin h1,
+    #boletin form,
+    #cajas .caja,
+    article#main-col,
+    aside#lateral
+    {
+        float:none;
+        text-align: center;
+        width: 100%;/*100%*/
+    }
+    header{
+        padding-bottom: 20px; /*20px*/
+    }
+    #boletin h1{
+        margin-top: 40px; /*40px*/
+    }
+    #boletin button{
+        display:block;
+        width: 50%;/*50*/
+    }
+    #boletin form input[type="email"]{
+        width:100%;
+        margin-bottom: 5px;
+    }
+
+    #servicios a iframe{
+        width: 100%;/*400px*/
+        /*height: 100px;100px*/
+    }
+
+    input, textarea{
+        width:98%;/*98%*/
+    }
+}
+
